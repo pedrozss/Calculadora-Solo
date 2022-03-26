@@ -1,0 +1,49 @@
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+   double x,y;
+   char operacao;
+   String operacaoStr;
+
+    Scanner scan = new Scanner(System.in);
+    
+    System.out.println("Escolha o tipo de operação: ");
+    System.out.println("");
+    System.out.println("Adição");
+    System.out.println("Subtração");
+    System.out.println("Multiplicação");
+    System.out.println("Divisão");
+    System.out.println("");
+    System.out.print("Operação = ");
+
+   
+    operacaoStr = scan.next();
+    operacao = operacaoStr.charAt(0);
+    System.out.println("");
+    System.out.println("Digite o primeiro número");
+    x = scan.nextDouble();
+    System.out.println("Digite o segundo número");
+    y = scan.nextDouble();
+    System.out.println("");
+
+    switch (operacao){
+      case '+':
+        System.out.println("Adição: "+x+" + "+y+" = " + (x+y));
+        break;
+      case '-':
+        System.out.println("Subtração: "+x+" - "+y+" = " + (x-y));
+        break;
+      case '*':
+        System.out.println("Multiplicação: "+x+" + "+y+" = " + (x*y));
+        break;
+      case '/':
+        System.out.println("Divisão: "+x+" + "+y+" = " + (x/y));
+        break;
+      default:
+        System.out.println("Operação inválida!");
+    }
+   
+
+               
+  }
+}
